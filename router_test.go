@@ -7,7 +7,7 @@ import (
 )
 
 func TestHelloRouter(t *testing.T) {
-	server := httptest.NewServer(NewRouter())
+	server := httptest.NewServer(newRouter())
 	response, err := http.Get(server.URL)
 
 	if err != nil{

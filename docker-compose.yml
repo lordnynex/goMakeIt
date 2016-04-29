@@ -2,6 +2,8 @@ web:
   build: .
   environment:
     - PORT=8080
+  volumes:
+    - .:/go/src/github.com/mergermarket/app
   ports:
     - "8080:8080"
 
