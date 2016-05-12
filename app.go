@@ -12,5 +12,5 @@ func getPort() (port string) {
 
 func main() {
 	fmt.Fprintf(os.Stdout, "Listening on %s", getPort())
-	http.ListenAndServe(":"+ getPort(), newRouter())
+	http.ListenAndServe(":"+getPort(), newRouter())
 }
